@@ -207,6 +207,18 @@ dataLayer.push({
     }]
   }
 });
+	
+	    
+window.dataLayer=window.dataLayer || [];
+dataLayer.push({ ecommerce: null });  // Clear the previous ecommerce object.
+dataLayer.push({
+  event: "view_item",
+  ecommerce: {
+       item_id: "Course_001",
+      item_name: "WebAnalytics",
+      item_category: "Online_Courses"
+  }
+});
 	</script>
 
     <title>Contact Page</title>
