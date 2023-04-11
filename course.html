@@ -209,7 +209,6 @@ dataLayer.push({
 });
 	
 	    
-window.dataLayer=window.dataLayer || [];
 dataLayer.push({ ecommerce: null });  // Clear the previous ecommerce object.
 dataLayer.push({
   event: "view_item",
@@ -217,6 +216,35 @@ dataLayer.push({
        item_id: "Course_001",
       item_name: "WebAnalytics",
       item_category: "Online_Courses"
+  }
+});
+	    
+dataLayer.push({ ecommerce: null });  
+dataLayer.push({
+  event: "purchase",
+  ecommerce: {
+      transaction_id: "ITM_234",
+      affliation:"Infosys Springboard",
+      value: 63.54,
+      tax: 2.3,
+      shipping: 0,
+      currency: "USD",
+      coupon: "REPUBLIC_SALE",
+      items: [
+       {
+        index: 0,
+        item_category: "Programming",
+        item_category2: "Coding",
+        item_category3: "Beginners",
+        item_category4: "Python",
+      },
+      {
+        index: 1,
+        item_category: "Programming",
+        item_category2: "Coding",
+        item_category3: "Advanced",
+        item_category4: "Web Analytics",
+      }]
   }
 });
 	</script>
