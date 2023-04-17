@@ -153,7 +153,7 @@ dataLayer.push({
 dataLayer.push({ ecommerce: null });  // Clear the previous ecommerce object.
 dataLayer.push({
   event: "add_to_cart",
-  ecommerce1: {
+  ecommerce: {
     items: [
      {
       item_id: "SKU_1234",
@@ -162,7 +162,7 @@ dataLayer.push({
       coupon: "SUMMER_FUN",
       currency: "INR",
       discount: 400,
-      index: 1,
+      index: 0,
       item_brand: "Google",
       item_category: "Apparel",
       item_category2: "Adult",
@@ -224,7 +224,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 &emsp;  &emsp;  &emsp;  &emsp;  <button id="btncart1" onclick="dataLayer.push({
   event: "add_to_cart",
-  ecommerce1: {
+  ecommerce: {
     items: [
      {
       item_id: "SKU_1234",
@@ -233,7 +233,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       coupon: "SUMMER_FUN",
       currency: "INR",
       discount: 400,
-      index: 1,
+      index: 0,
       item_brand: "Google",
       item_category: "Apparel",
       item_category2: "Adult",
